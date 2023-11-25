@@ -48,6 +48,6 @@ btnResultNode.addEventListener('click', function () {
     const a = Number(inputAnode.value);
     const operation = selectOperationNode.value;
 
-    const result = calculate({ w, h, a, operation });
-	console.log(result,"here");
+	const result = calculate({ w, h, a, operation });
+	outputNode.innerHTML = result
 });

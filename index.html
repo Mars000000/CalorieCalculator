@@ -9,30 +9,107 @@
 	<script defer src="calculator.js"> </script>
 	<script defer src="math.js"> </script>
 	<script defer src="index.js"> </script>
+	<script defer src="burger_menu.js"> </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 
 <body>
-	<footer>
-		<img src="" alt="">
-		<div class="menu">
-			<a href="">calculate</a>
-			<a href="">news</a>
-			<a href="">blog</a>
-			<a href="">contacts</a>
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar__wrap">
+				<div class="hamb">
+					<div class="hamb__field" id="hamb">
+						<span class="bar"></span> <span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+				
+				<ul class="menu" id="menu">
+					<li><a href="#">calculate</a></li>
+					<li><a href="#">news</a></li>
+					<li><a href="#">prices</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+				<a href="#" class="logo" id="logo"><img class="calc_icons" src="icons\iconmonstr-calculator-4-64.png"
+						alt=""></a>
+			</div>
 		</div>
-	</footer>
+	</nav>
+	<div class="popup" id="popup"></div>
+
+	<div class="content">
+		<div class="content_box">
+			<h1>
+				How to calculate daily caloric intake?
+			</h1>
+			<span>Any diet, regardless of the set goal, begins with calculating daily caloric, protein, fat, and
+				carbohydrate requirements. In this article, we will discuss the most accurate methods for determining
+				daily
+				caloric intake for both men and women.</span>
+			<img src="img_content\fd939d25b658b677b1efb25a3b745a65.jpg.webp" alt="">
+			<h2>What is basal metabolism?</h2>
+			<span>The calculation of daily caloric intake begins with determining the basal metabolic rate (BMR) – the
+				amount of energy required by the body to sustain essential life processes. Even at rest, the human body
+				constantly expends calories on activities such as breathing, digestion, circulation, and other
+				physiological
+				processes. Daily caloric intake should exceed the BMR, otherwise, the body cannot function
+				normally.</span>
+			<span>Basal metabolic rate can be determined through two methods: direct and indirect.
+
+				In the first method, an individual is placed in a special chamber where the amount of heat they generate
+				is
+				measured, and the BMR is then calculated. This method is the most accurate but is less
+				accessible.</span>
+
+			<span>The indirect method involves calculating the basal metabolic rate using a specific formula. Today,
+				there
+				are several primary methods for calculating BMR. Let's outline the main ones.</span>
+
+			<h2>Calculation of caloric intake using the Mifflin-St Jeor formula</h2>
+			<span>The method for calculating daily caloric intake was developed by dietitians under the guidance of
+				doctors
+				Mifflin and St Jeor. The formula was derived relatively recently but is currently considered the most
+				accurate. It helps calculate the necessary calorie amount for individuals aged 13 to 80.</span>
+			<span>Simplified version (without accounting for physical activity)</span>
+		</div>
+	</div>
 
 	<main>
-		<input class="js-number-w" type="number">
-		<input class="js-number-h" type="number">
-		<input class="js-number-a" type="number">
-		<select class="js-select-operation">
-			<option value="Women">Women</option>
-			<option value="Men">Men</option>
-		</select>
-		<button class="js-btn-result">Result</button>
-		<p class="js-output"></p>
+
+		<div class="base">
+			<select class="js-select-operation">
+				<option value="Women">Women</option>
+				<option value="Men">Men</option>
+			</select>
+			<div class="general_input">
+				<p>Weight: <input class="js-number-w" type="number" placeholder="Kg"> </p>
+				<p>Height: <input class="js-number-h" type="number" placeholder="Cm"></p>
+				<p>Age: <input class="js-number-a" type="number" placeholder="Year"></p>
+			</div>
+
+			<div class="btn_results">
+			<button class="js-btn-result">Result</button>
+			<p class="js-output"></p>
+		</div>
+		</div>
 	</main>
+
+	<footer>
+		<div>
+			<a>consultation</a>
+			<a>contacts</a>
+			<a>advice</a>
+		</div>
+		<div>
+			<a>more information</a>
+			<a>support</a>
+			<a>services</a>
+		</div>
+	</footer>
 </body>
 
 </html>
